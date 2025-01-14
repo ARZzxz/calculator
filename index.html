@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Nutrition Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Nutrition Calculator</h1>
+        <div class="form-group">
+            <label for="foodType">Select Food Type:</label>
+            <select id="foodType">
+                <option value="apple">Apple (100g)</option>
+                <option value="banana">Banana (100g)</option>
+                <option value="chicken">Chicken Breast (100g)</option>
+                <option value="rice">Rice (100g)</option>
+                <option value="broccoli">Broccoli (100g)</option>
+                <option value="salmon">Salmon (100g)</option>
+                <option value="egg">Egg (100g)</option>
+                <option value="milk">Milk (100ml)</option>
+                <option value="bread">Bread (100g)</option>
+                <option value="cheese">Cheese (100g)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="unit">Select Unit:</label>
+            <select id="unit">
+                <option value="grams">Grams</option>
+                <option value="ml">Milliliters</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+        </div>
+        <button id="calculateBtn">Calculate Nutrition</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
